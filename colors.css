@@ -1,0 +1,158 @@
+*, *::before,*::after {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+  }
+  
+  html {
+    font-size: 82.5%; /* good practice because makes math easier when using rem*/
+  }
+  
+  
+  body {
+    padding: 25px;
+    margin: 25px;
+    background-image: linear-gradient(to bottom, #00FFFF, purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* fixed doesnt scroll with the page, local will scroll with page contents, scroll is default and will scroll with the page */
+    background-position: center;
+  
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin: auto;
+    border-style: double;
+    border-color: black;
+    border-width: 1px;
+    width: 1000px;
+  }
+
+  img {
+    border-radius: 30%;
+    float: left;
+    padding: 30px;
+  }
+
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .footer {
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: cyan;
+    text-align: center;
+  }
+  
+  .entirePage {
+    align-content: center;
+    text-align: center;
+  }
+
+  .hellocssPortion, .boxmodelPortion {
+    padding: 100px;
+  }
+
+
+  .textAll {
+    text-align: left;
+  }
+
+  .resumeImages {
+    border-radius: 30%;
+    padding: 50px;  
+  }
+
+  .textAll > h2 {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .aBox {
+    padding: 20px;
+    float: left;
+  }
+  .resumeText p {
+    text-align: left;
+  }
+
+
+  .resumeText button {
+    color: magenta;
+  }
+
+  .resumeText button:hover {
+    background-color: magenta;
+    color: black;
+    cursor: pointer;
+  }
+
+  button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI',sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    color: white;
+    background-color: rgb(130, 53, 202);
+  }
+
+  li {
+    padding: 40px;
+    border: 3px double purple;
+    margin: 60px;
+    background-color: rgb(141, 58, 219, 0.2);
+    vertical-align: middle;
+    align-content: center;
+    text-align: center;
+  }
+
+  .floatsPortion6 {
+    padding: 70px;
+    border: 3px double purple;
+    margin: 60px;
+    background-color: rgb(141, 58, 219, 0.2);
+  }
+
+  .articleList {
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    border: 5px double black;
+    padding: 10px;
+    margin: 75px;
+  }
+
+  .articleList::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .articleList img {
+    border-radius: 0%;
+    float: left;
+    padding: 20;
+  }
+
+  .articleList p, h1, h3 {
+    padding: 20;
+  }
