@@ -120,9 +120,6 @@
     border: 3px double purple;
     margin: 60px;
     background-color: rgb(141, 58, 219, 0.2);
-    vertical-align: middle;
-    align-content: center;
-    text-align: center;
   }
 
   .floatsPortion6 {
@@ -133,7 +130,9 @@
   }
 
   .articleList {
-    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     border: 5px double black;
