@@ -188,6 +188,10 @@
       display: flex;
       flex-wrap: wrap;
   }
+  img {
+    width: 64px;
+    height: 64px;
+}
 }
 
 @media (min-width: 1024px){
