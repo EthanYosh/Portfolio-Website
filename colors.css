@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed; /* fixed doesnt scroll with the page, local will scroll with page contents, scroll is default and will scroll with the page */
     background-position: center;
+    justify-content: center;
   
   }
 
@@ -29,13 +30,13 @@
     border-style: double;
     border-color: black;
     border-width: 1px;
-    width: 1000px;
+    width: 90%;
   }
 
   img {
     border-radius: 30%;
-    float: left;
     padding: 30px;
+    max-width: 100%;
   }
 
   h1 {
@@ -45,7 +46,6 @@
   .footer {
     font-style: italic;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     color: cyan;
@@ -57,43 +57,6 @@
     text-align: center;
   }
 
-  .hellocssPortion, .boxmodelPortion {
-    padding: 100px;
-  }
-
-
-  .textAll {
-    text-align: left;
-  }
-
-  .resumeImages {
-    border-radius: 30%;
-    padding: 50px;  
-  }
-
-  .textAll > h2 {
-    font-size: 15px;
-    font-style: italic;
-  }
-
-  .aBox {
-    padding: 20px;
-    float: left;
-  }
-  .resumeText p {
-    text-align: left;
-  }
-
-
-  .resumeText button {
-    color: magenta;
-  }
-
-  .resumeText button:hover {
-    background-color: magenta;
-    color: black;
-    cursor: pointer;
-  }
 
   button {
     display: inline-block;
@@ -116,16 +79,17 @@
   }
 
   li {
-    padding: 40px;
+    padding: 50px;
     border: 3px double purple;
     margin: 60px;
     background-color: rgb(141, 58, 219, 0.2);
+    height: fit-content;
   }
 
   .floatsPortion6 {
     padding: 70px;
     border: 3px double purple;
-    margin: 60px;
+    margin: 6px;
     background-color: rgb(141, 58, 219, 0.2);
   }
 
@@ -148,10 +112,91 @@
 
   .articleList img {
     border-radius: 0%;
-    float: left;
     padding: 20;
   }
 
   .articleList p, h1, h3 {
     padding: 20;
   }
+
+
+  .hellocssPortion, .boxmodelPortion {
+    padding: 10px;
+    justify-content: center;
+  }
+
+
+  .textAll {
+    text-align: center;
+  }
+
+  .resumeImages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .textAll > h2 {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+
+
+
+  .aBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .resumeText p {
+    text-align: left;
+  }
+
+
+  .resumeText button {
+    color: magenta;
+  }
+
+  .resumeText button:hover {
+    background-color: magenta;
+    color: black;
+    cursor: pointer;
+  }
+
+  @media (min-width: 550px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px){
+  body{
+      width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px){
+  body{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  img {
+      width: fit-content;
+  }
+}
