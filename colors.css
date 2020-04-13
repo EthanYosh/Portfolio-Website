@@ -4,6 +4,8 @@
   }
   
   html {
+    margin: auto;
+    justify-content: center;
     font-size: 82.5%; /* good practice because makes math easier when using rem*/
   }
   
@@ -24,8 +26,6 @@
   }
 
   hr {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     margin: auto;
     border-style: double;
     border-color: black;
@@ -62,7 +62,7 @@
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
+    margin: 5px;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -85,11 +85,12 @@
     background-color: rgb(141, 58, 219, 0.2);
   }
 
-  .floatsPortion6 {
-    padding: 70px;
-    border: 3px double purple;
-    margin: 6px;
-    background-color: rgb(141, 58, 219, 0.2);
+  .floatsPortion6, .floatsPortion5, .floatsPortion4, .floatsPortion3, .floatsPortion2 {
+    width: 100%;
+  }
+
+  .floatsPortion1 {
+    width: 1300px;
   }
 
   .articleList {
@@ -163,16 +164,24 @@
     cursor: pointer;
   }
 
+
+
+
 @media (min-width: 550px){
   body{
+      width: 767px;
       display: flex;
       flex-wrap: wrap;
   }
+  img {
+    width: 32px;
+    height: 32px;
+}
 }
 
 @media (min-width: 768px){
   body{
-      width: fit-content;
+      width: 1023px;
       display: flex;
       flex-wrap: wrap;
   }
@@ -189,6 +198,6 @@
       flex-wrap: wrap;
   }
   img {
-      width: fit-content;
+      width: auto;
   }
 }
